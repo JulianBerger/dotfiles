@@ -100,6 +100,9 @@ defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 # Follow the keyboard focus while zoomed in
 defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 
+# Disable the Character Accents Popup
+defaults write -g ApplePressAndHoldEnabled -bool false
+
 # Disable press-and-hold for keys in favor of key repeat
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
@@ -248,7 +251,14 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 # Show the ~/Library folder
-chflags nohidden ~/Library && xattr -d com.apple.FinderInfo ~/Library
+if [[ $(xattr -l ~/Library | grep com.apple.FinderInfo) == "" ]]
+    then
+        :
+    else
+        xattr -d com.apple.FinderInfo ~/Library
+fi
+chflags nohidden ~/Library
+
 
 # Show the /Volumes folder
 sudo chflags nohidden /Volumes
@@ -262,7 +272,7 @@ sudo chflags nohidden /Volumes
 defaults write com.apple.dock mouse-over-hilite-stack -bool true
 
 # Set the icon size of Dock items to 36 pixels
-defaults write com.apple.dock tilesize -int 36
+defaults write com.apple.dock tilesize -int 58
 
 # Change minimize/maximize window effect
 defaults write com.apple.dock mineffect -string "scale"
