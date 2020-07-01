@@ -1,6 +1,6 @@
 # MacOS Dotfiles (Catalina)
 
-### Things to do after Setup: (Thanks to @KrauseFx)
+### Things to do after Setup (Thanks to @KrauseFx):
 
 ## Setup shell
 
@@ -26,3 +26,4 @@
 - [ ] Block port 80 using Little Snitch
 - [ ] Transfer keybase.io account
 - [ ] Remove labels and clean up Sidebar in Finder
+- [ ] [Apple watch screensaver](http://www.rasmusnielsen.dk/applewatch/)
