@@ -1,4 +1,10 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
+
+# Setup nvm
+mkdir ~/.nvm
+export NVM_DIR="$HOME/.nvm"
+echo "source $(brew --prefix nvm)/nvm.sh" >> ~/.zhsrc
+source ~/.zshrc
 
 nvm install node
 nvm use node
