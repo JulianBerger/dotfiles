@@ -7,9 +7,12 @@ echo "else # Local terminal mode" >> ~/.zshrc
 echo "  export EDITOR='code -w'" >> ~/.zshrc
 echo "fi" >> ~/.zshrc
 
+# jenv config
+echo "eval \"$(jenv init -)\"" >> ~/.zshrc
+
 # Aliases for VSCode to edit zshrc
-echo "alias zshconfig='code ~/.zshrc' >> ~/.zshrc
-echo "alias ohmyzsh='code ~/.oh-my-zsh' >> ~/.zshrc
+echo "alias zshconfig='code ~/.zshrc'" >> ~/.zshrc
+echo "alias ohmyzsh='code ~/.oh-my-zsh'" >> ~/.zshrc
 # Setup zsh-autosuggestions
 echo "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
 # Run neofetch on zsh start
