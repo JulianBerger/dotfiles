@@ -23,6 +23,7 @@
 
 ## Other
 
+- [ ] Configure [OpenInTerminal](https://github.com/Ji4n1ng/OpenInTerminal) Finder Extension
 - [ ] Block port 80 using Little Snitch
 - [ ] Transfer keybase.io account
 - [ ] Remove labels and clean up Sidebar in Finder

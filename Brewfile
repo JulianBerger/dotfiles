@@ -85,6 +85,7 @@ brew "sl"
 brew "sphinx-doc"
 brew "spoof-mac"
 brew "svgcleaner"
+brew "svn"
 brew "systemc"
 brew "telnet"
 brew "tomcat"
@@ -168,5 +169,5 @@ mas "ColorSlurp", id: 1287239339
 mas "WiFi Explorer", id: 494803304
 mas "iNet Network Scanner", id: 403304796
 mas "Bitwarden", id: 1352778147
-mas "Microsoft Remote Desktop", id: 715768417
+mas "Microsoft Remote Desktop", id: 1295203466
 mas "Xcode", id: 497799835
