@@ -156,6 +156,7 @@ cask "quicklookase"
 
 # rubocop:disable Style/NumericLiterals
 mas "Disk Speed Test", id: 425264550
+mas "DaisyDisk", id: 411643860
 mas "1Blocker", id: 1107421413
 mas "Xcode", id: 497799835
 mas "Outbank", id: 1094255754
